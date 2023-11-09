@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <ul class="nav nav-pills nav-justified" role="tablist">
+            <li class="nav-item">
+                <a class="nav-link active" data-bs-toggle="pill" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="pill" href="#teacher-registration">Teacher Registration</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="pill" href="#student-registration">Student Registration</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="pill" href="#faculty-assign">Faculty Assignment</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="pill" href="#">Log out</a>
+            </li>
+        </ul>
+        <div class="tab-content">
+            <div id="home" class="container tab-pane active"><br>
+                <h3>HOME</h3>
+            </div>
+            <div id="teacher-registration" class="container tab-pane fade"><br>
+                <h3>Teacher Registration form</h3>
+                <form action="TeacherRegister2.php" method="post" class="needs-validation">
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Enter Full Name:</label>
+                        <input type="text" class="form-control" id="name">
+                        <div class="valid-feedback">
+                            Looks good!
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="departmentName" class="form-label">Select Department:</label>
+                        <input class="form-control" list="datalistOptions" id="departmentName">
+                        <datalist id="datalistOptions">
+                            <option value="Computer Scince Engineering">
+                            <option value="Information Technology">
+                            <option value="Mechanical Engineering">
+                            <option value="Electrical and Electronics Engineering">
+                            <option value="Civil  Engineering">
+                        </datalist>
+                        <div class="valid-feedback">
+                            Looks good!
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="teacherId" class="form-label">Enter Teacher ID: </label>
+                        <input type="text" class="form-control" id="teacherId">
+                        <div class="valid-feedback">
+                            Looks good!
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="email">
+                        <div class="valid-feedback">
+                            Looks good!
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="mobNo" class="form-label">Enter Mobile:</label>
+                        <input type="tel" class="form-control" id="mobNo">
+                        <div class="valid-feedback">
+                            Looks good!
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+            <div id="student-registration" class="container tab-pane fade"><br>
+                <h3>Teacher Registration form</h3>
+                <form action="StudentRegister2.php" method="" class="needs-validation">
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Enter Full Name:</label>
+                        <input type="text" class="form-control" id="name">
+                        <div class="valid-feedback">
+                            Looks good!
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="branchName" class="form-label">Select Branch:</label>
+                        <input class="form-control" list="datalistOptions" id="branchName">
+                        <datalist id="datalistOptions">
+                            <option value="Computer Scince Engineering">
+                            <option value="Information Technology">
+                            <option value="Mechanical Engineering">
+                            <option value="Electrical and Electronics Engineering">
+                            <option value="Civil  Engineering">
+                        </datalist>
+                        <div class="valid-feedback">
+                            Looks good!
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="studentId" class="form-label">Enter Student ID: </label>
+                        <input type="text" class="form-control" id="studentId">
+                        <div class="valid-feedback">
+                            Looks good!
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="email">
+                        <div class="valid-feedback">
+                            Looks good!
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="mobNo" class="form-label">Enter Mobile:</label>
+                        <input type="tel" class="form-control" id="mobNo">
+                        <div class="valid-feedback">
+                            Looks good!
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+            <div id="faculty-assign" class="container tab-pane fade"><br>
+                <h3>Faculty Assignment</h3>
+            </div>
+            <div id="menu2" class="container tab-pane fade"><br>
+                <h3>Menu 2</h3>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
